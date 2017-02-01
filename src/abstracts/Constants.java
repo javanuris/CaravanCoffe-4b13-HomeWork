@@ -2,14 +2,13 @@ package abstracts;
 
 public interface Constants {
 	/**
-	 *Интерфейс содержить константные выражение
 	 * @version 1.0
 	 * @author Kalenov Nurislam
 	 * */
 	
-	public static final String SORT_FIRST = "Первый";
-	public static final String SORT_SECOND = "Второй";
-	public static final String SORT_THIRD  = "Третий";
+	public static final String SORT_FIRST = "РџРµСЂРІС‹Р№";
+	public static final String SORT_SECOND = "Р’С‚РѕСЂРѕР№";
+	public static final String SORT_THIRD  = "РўСЂРµС‚РёР№";
 	public static final String[] ARRAY_SORT = {SORT_FIRST ,SORT_SECOND ,SORT_THIRD};
 		
 	public static final String CORN  = "corn";

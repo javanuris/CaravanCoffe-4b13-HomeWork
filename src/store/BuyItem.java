@@ -4,7 +4,7 @@ import abstracts.CoffeAbstract;
 
 public class BuyItem {
 	/**
-	 * Класс,держить данные выбора 
+	 * РљР»Р°СЃСЃ , С…СЂР°РЅРёС‚ РґР°РЅРЅС‹Рµ Рѕ РІС‹Р±РѕСЂРµ 
 	 * @version 1.0
 	 * @author Kalenov Nurislam
 	 * */

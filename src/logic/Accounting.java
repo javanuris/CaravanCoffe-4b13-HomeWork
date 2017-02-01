@@ -7,13 +7,13 @@ import store.BuyItem;
 
 public class Accounting {
 	/**
-	 * Класс, высчитывает общую сумму м вес товаров
+	 * РљР»Р°СЃСЃ , СЃС‡РёС‚Р°РµС‚ РѕР±С‰СѓСЋ СЃС‚РѕРёРјР°С‚СЊ С‚РѕРІР°СЂР°
 	 * @version 1.0
 	 * @author Kalenov Nurislam
 	 * */
 	
-	 /** Считает общую цену 
-     * @param ArrayList<BuyItem> - список товаров
+	 /** РёС‚РѕРіРѕРІР°СЏ С†РµРЅР° РіСЂСѓР·Р°
+     * @param ArrayList<BuyItem> - СЃРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ
      * @see Accounting
     */
 public int summaryPrice(ArrayList<BuyItem> items){
@@ -30,8 +30,8 @@ public int summaryPrice(ArrayList<BuyItem> items){
    return summary;
 }
 }
-/** Считает общий вес  
- * @param ArrayList<BuyItem> - список товаров
+/** РС‚РѕРіРѕРІС‹Р№ РІРµСЃ С‚РѕРІР°СЂР° 
+ * @param ArrayList<BuyItem> - СЃРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ
  * @see Accounting
 */
 public int summaryWeight(ArrayList<BuyItem> items){

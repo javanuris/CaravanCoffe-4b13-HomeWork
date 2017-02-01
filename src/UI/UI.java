@@ -10,7 +10,7 @@ import store.Shop;
 
 public class UI {
 	/**
-	 * Класс,отображает данные
+	 * РљР»Р°СЃСЃ , РѕС‚РѕР±СЂР°Р¶Р°РµС‚ РґР°РЅРЅС‹Рµ
 	 * @version 1.0
 	 * @author Kalenov Nurislam
 	 * */
@@ -21,30 +21,30 @@ public class UI {
 	public void transmiter(){
 		
 		shower(buyItems);
-		System.out.println("Сортировка по ценам >50 && <72 тенге:");
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ С†РµРЅРµ >50 && <72 С‚РµРЅРіРµ :");
 		shower(good.sortByPrice(buyItems, 50, 72));
 		
-		System.out.println("Сортировка по весу >10 && <40 килограмм:");
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ РІРµСЃСѓ >10 && <40  РєРёР»РѕРіСЂР°Рј :");
 		shower(good.sortByWeight(buyItems, 10, 40));
 		
-		System.out.println("Сортировка по сорту:");
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРєР° РїРѕ СЃРѕСЂС‚Сѓ :");
 		shower(good.sortBySort(buyItems, Constants.SORT_SECOND));
 		
-		System.out.println("Сортировка по названию:");
+		System.out.println("РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ РЅР°РёРјРµРЅРѕРІР°РЅРёСЋ :");
 		shower(good.sortByName(buyItems));
 	}
 	
 	public void shower(ArrayList<BuyItem> items){
-		System.out.println("Сумма груза в фургоне: "+accounting.summaryPrice(items)+" тенге");
-		System.out.println("Обьем груза в фургоне: "+accounting.summaryWeight(items)+" киллограм");
+		System.out.println("РћР±С‰Р°СЏ СЃСѓРјРјР° РіСЂСѓР·Р° : "+accounting.summaryPrice(items)+" С‚РµРЅРіРµ");
+		System.out.println("РћР±С‰РёР№ РІРµСЃ РіСЂСѓР·Р° : "+accounting.summaryWeight(items)+" РєРёР»РѕРіСЂР°РјРј");
 		System.out.println("----------------------------------------------------------------------");
 		for(int i = 0; i < items.size(); i++){
 		System.out.println(items.get(i).getCoffeAbstract().toString()+ 
-				"  | " + items.get(i).getAmount()+" шт. | "
-						+items.get(i).getCoffeAbstract().isCoffeSort() +" сорт. | "
-						+items.get(i).getCoffeAbstract().isCoffeType()+ " вид. | "
-						+items.get(i).getCoffeAbstract().determinePrice()+ " тенге. | "
-						+items.get(i).getCoffeAbstract().determineWeight()+" кг. "
+				"  | " + items.get(i).getAmount()+" С€С‚. | "
+						+items.get(i).getCoffeAbstract().isCoffeSort() +" СЃРѕСЂС‚. | "
+						+items.get(i).getCoffeAbstract().isCoffeType()+ " РІРёРґ. | "
+						+items.get(i).getCoffeAbstract().determinePrice()+ " С‚Рі. | "
+						+items.get(i).getCoffeAbstract().determineWeight()+" РєРі. "
 				);
 }
 		System.out.println("------------------------------------------------------------------");

@@ -2,20 +2,20 @@ package abstracts;
 
 import java.util.Comparator;
 /**
- * Абстрактный класс , служить для описание продукта Кофе
+ * РђР±СЃС‚СЂР°РєРЅС‹Р№ РєР»Р°СЃСЃ , РѕРїСЂРµРґРµР»СЏРµС‚ С‚РѕРІР°СЂ - РєРѕС„Рµ
  * @version 1.0
  * @author Kalenov Nurislam
  * */
 public abstract class CoffeAbstract implements DimensionGoods , DetermineValueGood {
-	/**Свойство - состояние*/
+	
 	private String coffeType;
-	/**Свойство - сорт*/
+
 	private String coffeSort;
-	/**Свойство - наименование*/
+
 	private String coffeName;
-	/**Свойство - цена*/
+
 	private int price ;
-	/**Свойство - вес*/
+	
 	private int weight;
 	
 public CoffeAbstract(String coffetype, String coffeSort){
@@ -25,26 +25,26 @@ public CoffeAbstract(String coffetype, String coffeSort){
 		determineWeight();
 	}
 	/**
-	 * @return Состояние обьекта
+	 * @return  СЃРѕСЃС‚СЏРЅРµРёРµ С‚РѕРІР°СЂР°
 	 * */
 	public String isCoffeType(){
 		return coffeType;
 	}
 	/**
-	 * @return Сорт обьекта
+	 * @return СЃРѕСЂС‚ С‚РѕРІР°СЂР°
 	 * */
 	public String isCoffeSort(){
 		return coffeSort;
 	}
 	/**
-	 * @return Наименование обьекта
+	 * @return  РЅР°РёРјРµРЅРѕРІР°РЅРёРµ С‚РѕРІР°СЂР°
 	 * */
 	public String toString() {
 		return  getClass().getSimpleName();
 	//return coffeName;
 	}
 	/**
-	 * Определяеться цена
+	 *  РѕРїСЂРµРґРµР»СЏРµС‚ С†РµРЅС†
 	 * @return 
 	 * */
 	@Override
@@ -57,7 +57,7 @@ public CoffeAbstract(String coffetype, String coffeSort){
     return price;
 	}
 	/**
-	 *  Определяеться вес
+	 *  РѕРїСЂРµРґРµР»СЏРµС‚ РІРµСЃ
 	 * @return 
 	 * */
 	@Override
@@ -70,14 +70,14 @@ public CoffeAbstract(String coffetype, String coffeSort){
 	return weight;
 	}
 	/**
-	 * @return Цена обьекта
+	 * @return С†РµРЅР° С‚РѕРІСЂР°
 	 * */
 	@Override
    public int getPriceGood() {
 		return price;
    }
 	/**
-	 * @return Цена обьекта
+	 * @return  РІРµСЃ С‚РѕРІР°СЂР°
 	 * */
 	@Override
 	public int getWeihtGood() {

@@ -10,13 +10,13 @@ import store.BuyItem;
 
 public class SortingGood {
 	/**
-	 * Класс, сортирует товар по определенным правилам
+	 * РљР»Р°СЃСЃ, СЃРѕСЂС‚РёСЂСѓРµС‚ С‚РѕРІР°СЂ РїРѕ РѕРїСЂРµРґРµР»РµРЅРЅС‹Рј РїСЂР°РІРёР»Р°Рј
 	 * @version 1.0
 	 * @author Kalenov Nurislam
 	 * */
 	
-	/** Сортирует список по наименованию 
-     * @param ArrayList<BuyItem> - список товаров
+	/** РЎРѕСЂС‚РёСЂСѓРµС‚ СЃРїРёСЃРѕРє РїРѕ РЅР°РёРјРµРЅРѕРІР°РЅРёСЋ 
+     * @param ArrayList<BuyItem> - СЃРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ
      */
 public ArrayList<BuyItem> sortByName(ArrayList<BuyItem> buyItems){
 		Collections.sort(buyItems , new Comparator<BuyItem>() {
@@ -29,10 +29,10 @@ public ArrayList<BuyItem> sortByName(ArrayList<BuyItem> buyItems){
 		});
 		return buyItems;
 	}
-/** Сортирует список по цене 
- * @param ArrayList<BuyItem> - список товаров
- * @param int - начальный диапозон
- * @param int - конечный диапозон
+/** РЎРѕСЂС‚РёСЂСѓРµС‚ СЃРїРёСЃРѕРє РїРѕ С†РµРЅРµ 
+ * @param ArrayList<BuyItem> - СЃРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ
+ * @param int - РЅР°С‡Р°Р»СЊРЅС‹Р№ РґРёР°РїРѕР·РѕРЅ
+ * @param int - РєРѕРЅРµС‡РЅС‹Р№ РґРёР°РїРѕР·РѕРЅ
 */
 public ArrayList<BuyItem> sortByPrice(ArrayList<BuyItem> buyItems , int start, int end ){
 	ArrayList<BuyItem> itemsSort = buyItems;
@@ -44,10 +44,10 @@ public ArrayList<BuyItem> sortByPrice(ArrayList<BuyItem> buyItems , int start, i
 	}
 	return itemLocal;
 	}
-/** Сортирует список по весу
- * @param ArrayList<BuyItem> - список товаров
- * @param int - начальный диапозон
- * @param int - конечный диапозон
+/** РЎРѕСЂС‚РёСЂСѓРµС‚ СЃРїРёСЃРѕРє РїРѕ РІРµСЃСѓ
+ * @param ArrayList<BuyItem> - СЃРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ
+ * @param int - РЅР°С‡Р°Р»СЊРЅС‹Р№ РґРёР°РїРѕР·РѕРЅ
+ * @param int - РєРѕРЅРµС‡РЅС‹Р№ РґРёР°РїРѕР·РѕРЅ
 */
 public ArrayList<BuyItem> sortByWeight(ArrayList<BuyItem> buyItems , int start, int end ){
 	ArrayList<BuyItem> bItemssort = buyItems;
@@ -59,9 +59,9 @@ public ArrayList<BuyItem> sortByWeight(ArrayList<BuyItem> buyItems , int start, 
 	}
 	return second;
 	}
-/** Сортирует список по сорту кофе
- * @param ArrayList<BuyItem> - список товаров
- * @param String - наименование сорта
+/** РЎРѕСЂС‚РёСЂСѓРµС‚ СЃРїРёСЃРѕРє РїРѕ СЃРѕСЂС‚Сѓ РєРѕС„Рµ
+ * @param ArrayList<BuyItem> - СЃРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ
+ * @param String - РЅР°РёРјРµРЅРѕРІР°РЅРёРµ СЃРѕСЂС‚Р°
  * 
 */
 public ArrayList<BuyItem> sortBySort(ArrayList<BuyItem> buyItems , String sort){
@@ -86,8 +86,8 @@ public ArrayList<BuyItem> sortBySort(ArrayList<BuyItem> buyItems , String sort){
 		}
 		return second;
 	}
-/** Конфертирует в ArrayList<CoffeAbstract>
- * @param ArrayList<BuyItem> - список товаров
+/** РљРѕРЅС„РµСЂС‚РёСЂСѓРµС‚ РІ ArrayList<CoffeAbstract>
+ * @param ArrayList<BuyItem> - СЃРїРёСЃРѕРє С‚РѕРІР°СЂРѕРІ
  * 
 */
 public ArrayList<CoffeAbstract> convertorToCoffeType(ArrayList<BuyItem> buyItems){

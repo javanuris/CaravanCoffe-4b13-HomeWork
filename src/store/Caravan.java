@@ -7,7 +7,7 @@ import goods.ArabicaCoffee;
 
 public class Caravan {
 	/**
-	 * Класс,хранит стек данных выбора 
+	 * РљР»Р°СЃСЃ, Р·Р°Р±РёРІР°РµС‚ СЃС‚РµРє РґР°РЅРЅС‹С… РІ РјР°СЃСЃРёРІ
 	 * @version 1.0
 	 * @author Kalenov Nurislam
 	 * */
