@@ -4,7 +4,7 @@ import store.Shop;
 import ui.UI;
 public class Main {
 	/**
-	 * Класс,запускатор
+	 * РљР»Р°СЃСЃ, Р·Р°РїСѓСЃРєР°С‚РѕСЂ
 	 * @version 1.0
 	 * @author Kalenov Nurislam
 	 * */
