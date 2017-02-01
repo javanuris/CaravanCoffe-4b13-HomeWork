@@ -26,6 +26,7 @@ public void choice(){
 	DewevreiCoffe dewevreiCoffe1 = new DewevreiCoffe(Constants.INSTANT, Constants.SORT_SECOND);
 	LibericaCoffe libericaCoffe1 = new LibericaCoffe(Constants.CORN, Constants.SORT_THIRD);
 	
+	
 	caravan.addListOfItem(arabicaCoffre, 5);
 	caravan.addListOfItem(canephoraCoffe,6);
 	caravan.addListOfItem(dewevreiCoffe, 12);

@@ -28,7 +28,7 @@ public class UI {
 		shower(good.sortByWeight(buyItems, 10, 40));
 		
 		System.out.println("Сортировка по сорту:");
-		shower(good.sortBySort(buyItems, Constants.SORT_FIRST));
+		shower(good.sortBySort(buyItems, Constants.SORT_SECOND));
 		
 		System.out.println("Сортировка по названию:");
 		shower(good.sortByName(buyItems));
