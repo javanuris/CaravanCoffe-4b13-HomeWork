@@ -1,6 +1,6 @@
 package nuris.kz.epam.goods;
 
-import nuris.kz.epam.abstracts.CoffeAbstract;
+import nuris.kz.epam.template.CoffeAbstract;
 
 public class LibericaCoffe extends CoffeAbstract {
 

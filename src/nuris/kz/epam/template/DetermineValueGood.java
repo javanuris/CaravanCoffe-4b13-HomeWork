@@ -1,4 +1,4 @@
-package nuris.kz.epam.abstracts;
+package nuris.kz.epam.template;
 /**
  * @version 1.0
  * @author Kalenov Nurislam

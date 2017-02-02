@@ -2,7 +2,7 @@ package nuris.kz.epam.view;
 
 import java.util.ArrayList;
 
-import nuris.kz.epam.abstracts.Constants;
+import nuris.kz.epam.template.Constants;
 import nuris.kz.epam.logic.Accounting;
 import nuris.kz.epam.logic.SortingGood;
 import nuris.kz.epam.store.BuyItem;
@@ -38,13 +38,13 @@ public class UI {
 		System.out.println("Общая сумма груза : "+accounting.summaryPrice(items)+" тенге");
 		System.out.println("Общий вес груза : "+accounting.summaryWeight(items)+" килограмм");
 		System.out.println("----------------------------------------------------------------------");
-		for(int i = 0; i < items.size(); i++){
-		System.out.println(items.get(i).getCoffeAbstract().toString()+ 
-				"  | " + items.get(i).getAmount()+" шт. | "
-						+items.get(i).getCoffeAbstract().getCoffeSort() +" сорт. | "
-						+items.get(i).getCoffeAbstract().getCoffeType()+ " вид. | "
-						+items.get(i).getCoffeAbstract().determinePrice()+ " тг. | "
-						+items.get(i).getCoffeAbstract().determineWeight()+" кг. "
+		for(BuyItem buyItem : items){
+		System.out.println(buyItem.getCoffeAbstract().toString()+
+				"  | " + buyItem.getAmount()+" шт. | "
+						+buyItem.getCoffeAbstract().getCoffeSort() +" сорт. | "
+						+buyItem.getCoffeAbstract().getCoffeType()+ " вид. | "
+						+buyItem.getCoffeAbstract().determinePrice()+ " тг. | "
+						+buyItem.getCoffeAbstract().determineWeight()+" кг. "
 				);
 }
 		System.out.println("------------------------------------------------------------------");

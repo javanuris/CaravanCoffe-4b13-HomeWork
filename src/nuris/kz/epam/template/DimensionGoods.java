@@ -1,4 +1,4 @@
-package nuris.kz.epam.abstracts;
+package nuris.kz.epam.template;
 
 public interface DimensionGoods {
 	/**

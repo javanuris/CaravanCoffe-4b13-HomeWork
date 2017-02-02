@@ -1,4 +1,4 @@
-package nuris.kz.epam.abstracts;
+package nuris.kz.epam.template;
 
 /**
  * Абстракный класс , определяет товар - кофе
@@ -8,11 +8,8 @@ package nuris.kz.epam.abstracts;
 public abstract class CoffeAbstract implements DimensionGoods , DetermineValueGood {
 	
 	private String coffeType;
-
 	private String coffeSort;
-
 	private int price ;
-	
 	private int weight;
 	
 public CoffeAbstract(String coffetype, String coffeSort){
